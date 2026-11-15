@@ -12,19 +12,18 @@ Projektni zadatak iz predmeta Softversko inženjerstvo (4. razred, IT smjer).
 - Responzivan dizajn (mobitel i računalo)
 
 ## Struktura projekta
-```
 index.html
 style.css
 script.js
-docs/
+docs/ (wireframe, mockup i izvještaj)
 README.md
-```
 
 ## Pokretanje
-Otvori `index.html` u pregledniku.
+Preuzmi projekat i otvori `index.html` u pregledniku.
+Fajlovi `index.html`, `style.css` i `script.js` moraju biti u istom folderu.
 
 ## Tehnologije
 HTML5, CSS3, JavaScript, Git i GitHub.
 
-## Autori
-Zafar Berkovac i drugi član tima.
+## Autor
+Zafar Berkovac, IV-2
