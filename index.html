@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coding Club | Školski IT klub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="container nav">
+<a href="#pocetna" class="logo">&lt;/&gt; Coding Club</a>
+<button class="menu-btn" id="menuBtn" aria-label="Meni">&#9776;</button>
+<nav id="menu" class="menu">
+<a href="#pocetna">Početna</a>
+<a href="#o-nama">O nama</a>
+<a href="#clanovi">Članovi</a>
+<a href="#projekti">Projekti</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section id="pocetna" class="hero">
+<div class="container hero-inner">
+<div class="hero-text">
+<span class="badge">Školska godina 2026/2027</span>
+<h1>Školski IT klub <span>Coding Club</span></h1>
+<p>Mjesto gdje učimo programirati, gradimo projekte i zajedno istražujemo svijet tehnologije.</p>
+<div class="hero-actions">
+<a href="#kontakt" class="btn">Prijavi se u klub</a>
+<a href="#projekti" class="btn ghost">Pogledaj projekte</a>
+</div>
+<div class="stats">
+<div><strong>4+</strong><span>projekta</span></div>
+<div><strong>20+</strong><span>članova</span></div>
+<div><strong>1x</strong><span>sedmično</span></div>
+</div>
+</div>
+<div class="code-window">
+<div class="code-bar"><i></i><i></i><i></i><span>club.js</span></div>
+<pre><code><b class="k">const</b> club = {
+  ime: <b class="s">"Coding Club"</b>,
+  jezici: [<b class="s">"HTML"</b>, <b class="s">"CSS"</b>, <b class="s">"JS"</b>],
+  git: <b class="k">true</b>,
+  motto: <b class="s">"Kodiraj. Uči. Dijeli."</b>
+};
+
+<b class="k">function</b> pridruziSe(ucenik) {
+  <b class="k">return</b> ucenik + <b class="s">" je dio tima!"</b>;
+}</code></pre>
+</div>
+</div>
+</section>
+
+<section id="o-nama" class="section">
+<div class="container">
+<h2>O nama</h2>
+<div class="about-grid">
+<div class="about-card">
+<h3>Šta radimo</h3>
+<p>Učimo web razvoj, Git, algoritme i osnove softverskog inženjerstva kroz praktične projekte.</p>
+</div>
+<div class="about-card">
+<h3>Kada se družimo</h3>
+<p>Sastajemo se jednom sedmično u školskom kabinetu informatike. Dobrodošli su svi koji žele učiti.</p>
+</div>
+<div class="about-card">
+<h3>Naši ciljevi</h3>
+<p>Razvijati timski rad, kreativnost i programerske vještine te učestvovati na takmičenjima.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="clanovi" class="section alt">
+<div class="container">
+<h2>Članovi</h2>
+<div class="members">
+<div class="member">
+<div class="avatar">Z</div>
+<h3>Zafar Berkovac</h3>
+<p>Voditelj projekta, frontend razvoj</p>
+</div>
+<div class="member">
+<div class="avatar">M</div>
+<h3>Mentor</h3>
+<p>Prof. Admir Demir</p>
+</div>
+<div class="member">
+<div class="avatar">N</div>
+<h3>Novi član</h3>
+<p>Možda baš ti!</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projekti" class="section">
+<div class="container">
+<h2>Projekti</h2>
+<div class="projects">
+<article class="project">
+<div class="thumb t1">Web</div>
+<h3>Školska web stranica</h3>
+<p>Prezentacijska stranica kluba izrađena u HTML-u, CSS-u i JavaScriptu.</p>
+<span class="tag">HTML / CSS / JS</span>
+</article>
+<article class="project">
+<div class="thumb t2">Igra</div>
+<h3>Kviz znanja</h3>
+<p>Interaktivni kviz iz informatike s bodovanjem i rezultatima.</p>
+<span class="tag">JavaScript</span>
+</article>
+<article class="project">
+<div class="thumb t3">App</div>
+<h3>Planer zadataka</h3>
+<p>Jednostavna aplikacija za praćenje školskih obaveza.</p>
+<span class="tag">LocalStorage</span>
+</article>
+<article class="project">
+<div class="thumb t4">Git</div>
+<h3>Git radionica</h3>
+<p>Radionica o grananju, commitovima i timskom radu na GitHubu.</p>
+<span class="tag">Git / GitHub</span>
+</article>
+</div>
+</div>
+</section>
+
+<section id="kontakt" class="section alt">
+<div class="container narrow">
+<h2>Prijavi se</h2>
+<form id="form" novalidate>
+<label for="ime">Ime i prezime</label>
+<input type="text" id="ime" name="ime" placeholder="Unesi ime i prezime">
+<small class="error" id="imeErr"></small>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="ime@primjer.ba">
+<small class="error" id="emailErr"></small>
+
+<label for="razred">Razred</label>
+<select id="razred" name="razred">
+<option value="">Odaberi razred</option>
+<option>1. razred</option>
+<option>2. razred</option>
+<option>3. razred</option>
+<option>4. razred</option>
+</select>
+<small class="error" id="razredErr"></small>
+
+<label for="poruka">Poruka</label>
+<textarea id="poruka" name="poruka" rows="4" placeholder="Zašto se želiš pridružiti?"></textarea>
+<small class="error" id="porukaErr"></small>
+
+<button type="submit" class="btn">Pošalji prijavu</button>
+<p class="success" id="success"></p>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container">
+<p>&copy; 2026 Coding Club | Školski IT klub</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
